@@ -1,0 +1,36 @@
+<h5>
+	{{title}}
+</h5>
+
+<table border="1">
+	<tr>
+		<td colspan="5" align="right"> <input type="text" [(ngModel)]="display"> </td>
+	</tr>
+	<tr>
+		<td (click)="push('1')"> 1 </td>
+		<td (click)="push('2')"> 2 </td>
+		<td (click)="push('3')"> 3 </td>
+		<td (click)="sum()"> + </td>
+		<td (click)="clear()"> C </td>
+	</tr>
+	<tr>
+		<td (click)="push('4')"> 4 </td>
+		<td (click)="push('5')"> 5 </td>
+		<td (click)="push('6')"> 6 </td>
+		<td (click)="sub()"> - </td>
+		<td (click)="exp()"> ^ </td>
+	</tr>
+	<tr>
+		<td (click)="push('7')"> 7 </td>
+		<td (click)="push('8')"> 8 </td>
+		<td (click)="push('9')"> 9 </td>
+		<td (click)="mul()"> * </td>
+		<td rowspan="2" (click)="compute()"> = </td>
+	</tr>
+	<tr>
+		<td (click)="push('0')"> 0 </td>
+		<td (click)="push('00')"> 00 </td>
+		<td (click)="push('.')"> . </td>
+		<td (click)="div()"> / </td>
+	</tr>
+</table>
