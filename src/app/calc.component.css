@@ -1,4 +1,8 @@
 td {
 	text-align: "right";
-	width: 2px;
+	width: 10px;
+}
+
+input {
+	text-align: "right";
 }

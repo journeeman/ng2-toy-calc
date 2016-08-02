@@ -10,5 +10,5 @@ import { CalcAppComponent } from './calc.component';
 })
 
 export class AppComponent {
-	title = 'RCKR';
+	title = 'rckr calculator';
 }

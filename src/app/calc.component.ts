@@ -8,14 +8,18 @@ import { Component } from '@angular/core';
 })
 
 export class CalcAppComponent {
-  title = 'Calculator';
+  title = 'Incomplete. Don\'t use it to do your taxes. ;-)';
   display = '0';
   op = '';
   mem = '';
 
+  // Note the === and !== operators. TypeScript/JavaScript also have the == and != ops but, they do implicit type conversion!
+  // The === and !== ops do not do that. So they are always safer to use.
   push(num: string) {
     if (this.display === '0') {
-      this.display = num;
+      if (num !== '00') {
+        this.display = num;
+      }
     } else {
       this.display = this.display + num;
     }
@@ -57,8 +61,8 @@ export class CalcAppComponent {
   }
   */
 
-  // rather than write the above functions which duplicate a piece/pattern of code,
-  // we can write a 'higher-order procedure' which captures the pattern, as follows
+  // Rather than write the above functions which duplicate a piece/pattern of code
+  // we can write a 'higher-order function' which captures the pattern, as follows
   makeOp(op: string) {
     return (() => { 
       this.op = op;
