@@ -4,7 +4,7 @@
 
 <table border="1">
 	<tr>
-		<td colspan="5" align="right"> <input type="text" [(ngModel)]="display"> </td>
+		<td colspan="5" align="right"> <input type="text" [(ngModel)]="display" (click)="clear()"> </td>
 	</tr>
 	<tr>
 		<td (click)="push('1')"> 1 </td>

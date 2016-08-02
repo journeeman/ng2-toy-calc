@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
 
-/*
-TODO:
-  1) Add support for exponentiation
-  2) Add support for floating point
-*/
-
 @Component({
   moduleId: module.id,
   selector: 'calc-app',
@@ -14,7 +8,7 @@ TODO:
 })
 
 export class CalcAppComponent {
-  title = 'RCKR Calculator';
+  title = 'Calculator';
   display = '0';
   op = '';
   mem = '';
